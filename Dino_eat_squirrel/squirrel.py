@@ -7,7 +7,7 @@ import random, sys, time, math, pygame
 from pygame.locals import *
 
 FPS = 30 # frames per second to update the screen
-WINWIDTH = 640 # width of the program's window, in pixels
+WINWIDTH = 900 # width of the program's window, in pixels
 WINHEIGHT = 480 # height in pixels
 HALF_WINWIDTH = int(WINWIDTH / 2)
 HALF_WINHEIGHT = int(WINHEIGHT / 2)
@@ -61,18 +61,20 @@ Grass data structure keys:
 """
 
 def main():
-    global FPSCLOCK, DISPLAYSURF, BASICFONT, L_SQUIR_IMG, R_SQUIR_IMG, GRASSIMAGES
+    global FPSCLOCK, DISPLAYSURF, BASICFONT, L_SQUIR_IMG, R_SQUIR_IMG, GRASSIMAGES, L_DINO_IMG, R_DINO_IMG
 
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
     pygame.display.set_icon(pygame.image.load('gameicon.png'))
     DISPLAYSURF = pygame.display.set_mode((WINWIDTH, WINHEIGHT))
-    pygame.display.set_caption('Squirrel Eat Squirrel')
+    pygame.display.set_caption('Dinosaur Eat Squirrel')
     BASICFONT = pygame.font.Font('freesansbold.ttf', 32)
 
     # load the image files
     L_SQUIR_IMG = pygame.image.load('squirrel.png')
     R_SQUIR_IMG = pygame.transform.flip(L_SQUIR_IMG, True, False)
+    L_DINO_IMG = pygame.image.load('dino.png')
+    R_DINO_IMG = pygame.transform.flip(L_DINO_IMG, True, False)
     GRASSIMAGES = []
     for i in range(1, 5):
         GRASSIMAGES.append(pygame.image.load('grass%s.png' % i))
@@ -109,7 +111,7 @@ def runGame():
     grassObjs = []    # stores all the grass objects in the game
     squirrelObjs = [] # stores all the non-player squirrel objects
     # stores the player object:
-    playerObj = {'surface': pygame.transform.scale(L_SQUIR_IMG, (STARTSIZE, STARTSIZE)),
+    playerObj = {'surface': pygame.transform.scale(L_DINO_IMG, (STARTSIZE, STARTSIZE)),
                  'facing': LEFT,
                  'size': STARTSIZE,
                  'x': HALF_WINWIDTH,
@@ -227,13 +229,13 @@ def runGame():
                     moveRight = False
                     moveLeft = True
                     if playerObj['facing'] != LEFT: # change player image
-                        playerObj['surface'] = pygame.transform.scale(L_SQUIR_IMG, (playerObj['size'], playerObj['size']))
+                        playerObj['surface'] = pygame.transform.scale(L_DINO_IMG, (playerObj['size'], playerObj['size']))
                     playerObj['facing'] = LEFT
                 elif event.key in (K_RIGHT, K_d):
                     moveLeft = False
                     moveRight = True
                     if playerObj['facing'] != RIGHT: # change player image
-                        playerObj['surface'] = pygame.transform.scale(R_SQUIR_IMG, (playerObj['size'], playerObj['size']))
+                        playerObj['surface'] = pygame.transform.scale(R_DINO_IMG, (playerObj['size'], playerObj['size']))
                     playerObj['facing'] = RIGHT
                 elif winMode and event.key == K_r:
                     return
@@ -281,9 +283,9 @@ def runGame():
                         del squirrelObjs[i]
 
                         if playerObj['facing'] == LEFT:
-                            playerObj['surface'] = pygame.transform.scale(L_SQUIR_IMG, (playerObj['size'], playerObj['size']))
+                            playerObj['surface'] = pygame.transform.scale(L_DINO_IMG, (playerObj['size'], playerObj['size']))
                         if playerObj['facing'] == RIGHT:
-                            playerObj['surface'] = pygame.transform.scale(R_SQUIR_IMG, (playerObj['size'], playerObj['size']))
+                            playerObj['surface'] = pygame.transform.scale(R_DINO_IMG, (playerObj['size'], playerObj['size']))
 
                         if playerObj['size'] > WINSIZE:
                             winMode = True # turn on "win mode"

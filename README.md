@@ -1,4 +1,7 @@
-making-games-with-python-and-pygame
+A fork of squirrel eat squirrel, from Al Sweigart's book "Making Games with Python & Pygame"
+
+Dino eat squirrel
 ===================================
 
-The source code for the game programs for the book, "Making Games with Python &amp; Pygame"
+My little brother likes dinosaurs so I modified the source code and sprites
+so that the player's character is a dinosaur that eats the squirrels.
