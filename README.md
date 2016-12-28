@@ -30,6 +30,6 @@ so that the player's character is a dinosaur that eats the squirrels.
 ```
 
 
-Screenshot:
+##Screenshot:
 
 ![screen](/screenshot.png)
