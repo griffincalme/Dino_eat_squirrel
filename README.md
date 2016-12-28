@@ -1,6 +1,6 @@
 A fork of squirrel eat squirrel, from Al Sweigart's book "Making Games with Python & Pygame"
 
-Dino eat squirrel
+Dino eat squirrel 🐿
 ===================================
 
 My little brother likes dinosaurs so I modified the source code and sprites
