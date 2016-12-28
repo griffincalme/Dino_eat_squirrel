@@ -31,7 +31,7 @@ so that the player's character is a dinosaur that eats the squirrels.
                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.
+```
 ─────────────────────
 ───────────████████──
 ──────────███▄███████
@@ -52,3 +52,4 @@ so that the player's character is a dinosaur that eats the squirrels.
 ─────█─────█─────────
 ─────██────██────────
 ─────────────────────
+```
