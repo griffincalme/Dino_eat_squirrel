@@ -96,7 +96,7 @@ def runGame():
     gameOverRect = gameOverSurf.get_rect()
     gameOverRect.center = (HALF_WINWIDTH, HALF_WINHEIGHT)
 
-    winSurf = BASICFONT.render('You have achieved OMEGA SQUIRREL!', True, WHITE)
+    winSurf = BASICFONT.render('You have achieved OMEGA DINO!', True, WHITE)
     winRect = winSurf.get_rect()
     winRect.center = (HALF_WINWIDTH, HALF_WINHEIGHT)
 
