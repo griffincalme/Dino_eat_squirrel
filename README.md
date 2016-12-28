@@ -28,3 +28,8 @@ so that the player's character is a dinosaur that eats the squirrels.
 ─────██────██────────
 ─────────────────────
 ```
+
+
+Screenshot:
+
+![screen](/screenshot.png)
