@@ -1,10 +1,20 @@
+# Dino Eat Squirrel by Griffin Calme
+
+# Forked from:
 # Squirrel Eat Squirrel (a 2D Katamari Damacy clone)
 # By Al Sweigart al@inventwithpython.com
 # http://inventwithpython.com/pygame
 # Released under a "Simplified BSD" license
 
+
 import random, sys, time, math, pygame
 from pygame.locals import *
+
+pygame.mixer.init(44100, -16,2,2048)
+pygame.mixer.music.load("Zanzibar.mp3")
+pygame.mixer.music.play(-1, 0.0)
+
+
 
 FPS = 30 # frames per second to update the screen
 WINWIDTH = 900 # width of the program's window, in pixels
@@ -12,7 +22,7 @@ WINHEIGHT = 480 # height in pixels
 HALF_WINWIDTH = int(WINWIDTH / 2)
 HALF_WINHEIGHT = int(WINHEIGHT / 2)
 
-GRASSCOLOR = (24, 255, 0)
+GRASSCOLOR = (211, 186, 50)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 
