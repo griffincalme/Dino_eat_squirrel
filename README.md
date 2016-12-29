@@ -33,7 +33,7 @@ Historically accurate.
 
 ##Screenshot:
 
-![screen](/screenshot.png)
+![screen](/screenshot1.png)
 
 
 Music credits:
