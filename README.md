@@ -5,7 +5,9 @@ Dino eat squirrel 🐿
 
 My little brother likes dinosaurs so I modified the source code and sprites
 so that the player's character is a dinosaur that eats the squirrels. :squirrel:
-Historically accurate.
+
+The background is changed to a savannah-esque look and "Zanzibar" by Kevin McLeod plays in the background giving a safari feel.
+This dino simulation is guaranteed 100% historically accurate.
 
 ```
 ─────────────────────
