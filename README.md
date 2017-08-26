@@ -33,7 +33,7 @@ This dino simulation is guaranteed 100% historically accurate.
 ```
 
 
-##Screenshot:
+## Screenshot:
 
 ![screen](/screenshot1.png)
 
